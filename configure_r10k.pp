@@ -10,8 +10,13 @@ class { 'r10k':
   version           => '1.3.2',
   sources           => {
     'puppet' => {
-      'remote'  => 'https://github.com/glarizza/puppet_repository.git',
+      'remote'  => 'https://github.com/moutons/puppet_repository.git',
       'basedir' => "${::settings::confdir}/environments",
+      'prefix'  => false,
+    },
+    'hiera'     => {
+      'remote'  => 'https://github.com/moutons/hiera_main.git',
+      'basedir' => "${::settings::confdir}/hiera",
       'prefix'  => false,
     }
   },
