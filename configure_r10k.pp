@@ -22,4 +22,5 @@ class { 'r10k':
   },
   purgedirs         => ["${::settings::confdir}/environments"],
   manage_modulepath => false,
+  provider          => 'pe_gem',
 }
